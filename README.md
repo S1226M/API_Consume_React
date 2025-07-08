@@ -13,7 +13,7 @@ builder.Services.AddCors(options =>
                         .AllowAnyMethod());
 });
 
-# After build, run in API project in program.cs
+# After build in program.cs
 
 app.UseCors("AllowReactApp");
 
