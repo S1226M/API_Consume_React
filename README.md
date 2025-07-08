@@ -25,7 +25,7 @@ export default function Country() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5210/api/Country")
+      .get(----Enter Your API URL----------)
       .then((response) => {
         console.log("Countries fetched:", response.data);
         setCountries(response.data);
@@ -37,7 +37,6 @@ export default function Country() {
 
   return (
     <div>
-      <h2>Country List</h2>
       <ul>
         {countries.map((country) => (
           <li>{country.countryName}</li>
