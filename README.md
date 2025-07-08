@@ -8,7 +8,7 @@ npm i axios
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
-        policy => policy.AllowAnyOrigin()  // <-- React app origin
+        policy => policy.AllowAnyOrigin() 
                         .AllowAnyHeader()
                         .AllowAnyMethod());
 });
