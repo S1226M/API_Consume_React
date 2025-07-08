@@ -1,6 +1,6 @@
 # API_Consume_React
 # Download Cors and Axios
-npm i cors 
+npm i cors \n
 npm i axios
 
 # Add code in Program.cs 
