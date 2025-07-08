@@ -4,7 +4,7 @@ npm i cors
 
 npm i axios
 
-# Add code in Program.cs 
+# Add code in Program.cs in API project
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
@@ -13,10 +13,13 @@ builder.Services.AddCors(options =>
                         .AllowAnyMethod());
 });
 
-# After build, run
+# After build, run in API project in program.cs
+
 app.UseCors("AllowReactApp");
 
 # Make a JSX folder in react 
+
+```csharp
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -45,3 +48,5 @@ export default function Country() {
     </div>
   );
 }
+
+```
